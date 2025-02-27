@@ -16,7 +16,7 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background-color: rgba(0, 0, 0, .7);
-	z-index: 1;
+	z-index: 2;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -42,13 +42,25 @@ body {
     gap: 20px;
     justify-items: center;
     align-items: center;
+    position: relative;
 }
-
+#genius::before {
+	content:'';
+	background-color: black;
+	display: block;
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	border-radius: 100%;
+}
 .button {
 	border-radius: 150px 0 0 0;
     width: 150px;
     height: 150px;
-/*    border-radius: 15px;*/
     transition: background-color 0.3s ease;
     cursor: pointer;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
