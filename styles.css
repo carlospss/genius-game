@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#init-background {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, .7);
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#init-background h1 {
+	position: absolute;
+	top: 50px;
+}
+#init-background button{
+	width: 150px;
+	font-size: 1.5rem;
+
+}
+#genius {
+	background-color: black;
+	width: fit-content;
+	padding: 25px;
+	border-radius: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.button {
+	border-radius: 150px 0 0 0;
+    width: 150px;
+    height: 150px;
+/*    border-radius: 15px;*/
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.red {
+    background-color: #ff4d4d;
+}
+
+.green {
+	transform: scaleX(-1);
+    background-color: #4dff4d;
+}
+
+.blue {
+	transform: scaleY(-1);
+    background-color: #4d94ff;
+}
+
+.yellow {
+	transform: scale(-1);
+    background-color: #ffeb3b;
+}
+
